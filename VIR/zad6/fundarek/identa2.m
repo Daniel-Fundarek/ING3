@@ -7,6 +7,9 @@ plot(tout,y)
 hold off
 tu = [tout, u]
 ty = [tout,y]
+load fundarek_sada2.mat
+tu1 = [tout, u]
+ty1 = [tout,y]
 % load fundarek_sada2.mat
 % figure(2)
 % hold on 
@@ -75,8 +78,8 @@ plot(best_ch(3,:));
 hold off
 
 a1 = best_ch(1,end)
-a2 = best_ch(2,end)
-a3 = best_ch(3,end)
+b1 = best_ch(2,end)
+b2 = best_ch(3,end)
 a1 = 1.0125
-a2 = 0.3862
-a3 = 1.4276
+b1 = 0.3862
+b2 = 1.4276

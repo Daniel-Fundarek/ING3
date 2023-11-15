@@ -19,7 +19,7 @@ fitness = zeros(1,length(Pop));
          if out(row).ErrorMessage ~= ""
             fitness(row) = 1000000000;
          end
-        fitness(row) = sum(abs(out(row).e));
+        fitness(row) = sum(abs(out(row).e(10:end)));
 
     end
 end

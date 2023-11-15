@@ -1,3 +1,4 @@
+clear
 load fundarek_sada1.mat
 figure(1)
 hold on 
@@ -6,12 +7,14 @@ plot(tout,y)
 hold off
 tu = [tout, u]
 ty = [tout,y]
-% load fundarek_sada2.mat
-% figure(2)
-% hold on 
-% plot(tout,u)
-% plot(tout,y)
-% hold off
+load fundarek_sada2.mat
+tu1 = [tout, u]
+ty1 = [tout,y]
+figure(2)
+hold on 
+plot(tout,u)
+plot(tout,y)
+hold off
 
 
 numgen=100;	% number of generations
@@ -76,6 +79,6 @@ hold off
 K = best_ch(1,end)
 T = best_ch(2,end)
 Td = best_ch(3,end)
-K = 1.0121
-T = 0.891
-Td = 0.2811
+K = 1.0117
+T = 0.8673
+Td = 0.3034
