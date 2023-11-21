@@ -102,3 +102,4 @@ D = best_ch(3,end)
 % Slow without overshoot
 P = 0.6378
 I = 0.7674
+D = 0
